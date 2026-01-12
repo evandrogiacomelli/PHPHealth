@@ -22,4 +22,7 @@ if (isset($path[2])) { $param = $path[2]; }  else { $param = ''; }
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-var_dump($method);
+include_once __DIR__ . "/interface/http/patientController.php";
+handlePatient($api, $method);
+
+//var_dump($method);
