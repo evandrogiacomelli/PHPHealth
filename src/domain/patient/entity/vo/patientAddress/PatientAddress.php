@@ -1,5 +1,7 @@
 <?php
 
+namespace Domain\Patient\Entity\VO\PatientAddress;
+
 class PatientAddress
 {
     private PatientPostalCode $postalCode;

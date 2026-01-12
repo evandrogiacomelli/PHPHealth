@@ -1,6 +1,6 @@
 <?php
 
-namespace vo;
+namespace Domain\Patient\Entity\VO;
 
 use InvalidArgumentException;
 

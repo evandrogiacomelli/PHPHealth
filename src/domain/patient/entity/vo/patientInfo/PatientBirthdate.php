@@ -1,5 +1,7 @@
 <?php
 
+namespace Domain\Patient\Entity\VO\PatientInfo;
+
 class PatientBirthdate
 {
     private \DateTimeImmutable $value;

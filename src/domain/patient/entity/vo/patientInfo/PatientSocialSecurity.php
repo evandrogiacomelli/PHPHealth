@@ -1,5 +1,7 @@
 <?php
 
+namespace Domain\Patient\Entity\VO\PatientInfo;
+
 class PatientSocialSecurity
 {
     private string $value;

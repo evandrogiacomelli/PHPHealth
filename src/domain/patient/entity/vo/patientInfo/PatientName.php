@@ -1,5 +1,9 @@
 <?php
 
+namespace Domain\Patient\Entity\VO\PatientInfo;
+
+use InvalidArgumentException;
+
 class PatientName
 {
     private string $value;

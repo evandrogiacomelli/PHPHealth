@@ -1,5 +1,7 @@
 <?php
 
+namespace Domain\Patient\Entity\VO\PatientInfo;
+
 class PatientBiologicalSex
 {
     private const MALE = 'male';

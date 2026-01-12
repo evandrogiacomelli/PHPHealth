@@ -1,5 +1,7 @@
 <?php
 
+namespace Domain\Patient\Entity\VO\PatientAddress;
+
 class PatientState
 {
     private string $value;

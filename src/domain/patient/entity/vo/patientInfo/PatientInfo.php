@@ -1,5 +1,7 @@
 <?php
 
+namespace Domain\Patient\Entity\VO\PatientInfo;
+
 class PatientInfo
 {
     private PatientName $name;
@@ -18,7 +20,7 @@ class PatientInfo
         $this->name = $name;
         $this->birthdate = $birthdate;
         $this->cpf = $cpf;
-        $this->gender = $biologicalSex;
+        $this->biologicalSex = $biologicalSex;
     }
 
     public static function create

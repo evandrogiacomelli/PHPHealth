@@ -1,6 +1,11 @@
 <?php
 
-use vo\PatientId;
+namespace Domain\Patient\Entity;
+
+use Domain\Patient\Entity\VO\PatientEmergencyContact;
+use Domain\Patient\Entity\VO\PatientId;
+use Domain\Patient\Entity\VO\PatientAddress\PatientAddress;
+use Domain\Patient\Entity\VO\PatientInfo\PatientInfo;
 
 class Patient
 {
