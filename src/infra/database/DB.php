@@ -4,16 +4,15 @@ namespace infra\database;
 
 use PDO;
 
-class db
+class DB
 {
     public static function connect()
     {
-        $host = 'localhost';
-        $port = '5432';
+        $host = 'db';
         $user = 'postgres';
         $password = 'postgres';
         $database = 'api';
 
-        return new PDO("pgsql:host=$host;port=$port;dbname=$database", $user, $password);
+        return new PDO("pgsql:host=$host;dbname=$database", $user, $password);
     }
 }
