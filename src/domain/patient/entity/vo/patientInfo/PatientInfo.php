@@ -5,20 +5,20 @@ class PatientInfo
     private PatientName $name;
     private PatientBirthdate $birthdate;
     private PatientSocialSecurity $cpf;
-    private PatientGender $gender;
+    private PatientBiologicalSex $biologicalSex;
 
     private function __construct
     (
         PatientName $name,
         PatientBirthdate $birthdate,
         PatientSocialSecurity $cpf,
-        PatientGender $gender
+        PatientBiologicalSex $biologicalSex
     )
     {
         $this->name = $name;
         $this->birthdate = $birthdate;
         $this->cpf = $cpf;
-        $this->gender = $gender;
+        $this->gender = $biologicalSex;
     }
 
     public static function create
@@ -26,9 +26,9 @@ class PatientInfo
         PatientName $name,
         PatientBirthdate $birthdate,
         PatientSocialSecurity $cpf,
-        PatientGender $gender
+        PatientBiologicalSex $biologicalSex
     ) : self {
-        return new self( $name, $birthdate, $cpf, $gender);
+        return new self( $name, $birthdate, $cpf, $biologicalSex);
     }
 
 }
