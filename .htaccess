@@ -1,4 +1,0 @@
-RewriteEngine On # mecanismo de reescrita do Apache
-RewriteCond %{REQUEST_FILENAME} !-f # se existir arquivo com nome, não aplica roteamento
-RewriteCond %{REQUEST_FILENAME} !-d # se existir diretório com nome, não aplica roteamento
-RewriteRule ^(.*)$ index.php?path=$1 [QSA,L] # redireciona para controller
