@@ -18,7 +18,8 @@ class Patient
         $this->contact = $contact;
     }
 
-    public static function create(
+    public static function create
+    (
         PatientInfo $info,
         PatientAddress $address,
         PatientContact $contact
