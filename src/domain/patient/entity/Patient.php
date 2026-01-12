@@ -1,5 +1,7 @@
 <?php
 
+use vo\PatientId;
+
 class Patient
 {
     private PatientId $id;
