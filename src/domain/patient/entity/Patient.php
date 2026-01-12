@@ -7,20 +7,20 @@ class Patient
     private PatientId $id;
     private PatientInfo $info;
     private PatientAddress $address;
-    private PatientContact $contact;
+    private PatientEmergencyContact $emergencyContact;
 
     private function __construct
     (
         PatientId $id,
         PatientInfo $info,
         PatientAddress $address,
-        PatientContact $contact
+        PatientEmergencyContact $emergencyContact
     )
     {
         $this->id = $id;
         $this->info = $info;
         $this->address = $address;
-        $this->contact = $contact;
+        $this->contact = $emergencyContact;
     }
 
     public static function create
@@ -28,9 +28,9 @@ class Patient
         PatientId $id,
         PatientInfo $info,
         PatientAddress $address,
-        PatientContact $contact
+        PatientEmergencyContact $emergencyContact
 
     ): self {
-        return new self($id, $info, $address, $contact);
+        return new self($id, $info, $address, $emergencyContact);
     }
 }
